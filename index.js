@@ -7,7 +7,7 @@
       content: "#smooth-content",
       smooth: 2,
       effects: true,
-      smoothTouch: 0.3
+      smoothTouch: 0.1
     });
 
 //LAG
@@ -123,4 +123,5 @@ smoother.effects(".largetxt, .brandidentity, .textsection2",{
     });
 
     // refresh after setup
+
     ScrollTrigger.refresh();
