@@ -1,0 +1,721 @@
+/*VARIABLES*/
+:fontstyles {
+--descriptive: font-family: "Outfit", sans-serif;
+--fontweight-light: font-weight: 200;
+--fontweight-medium: font-weight: 400;
+}
+
+.navlink, .servicesinfo, .projtitle, .servicetitle, .projdescription, .projectbutton, .top, .bottom, .contactb{
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+}
+
+body{
+    margin: 0px;
+    background-color: #ECEBEB;
+scroll-behavior: smooth;
+height: 100%;}
+
+#smooth-wrapper, #smooth-content {
+  min-height: 100vh;}
+
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 25px;
+}
+
+.herocontent{
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;}
+
+    
+
+.topsection{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    right: 0;
+    left: 0;
+    top: 45px;
+    width: 90vw;
+    justify-content: space-between;
+    z-index: 100;}
+
+.logo{
+    width: 50px;
+    left: 0px;}
+
+.navbar{
+    display: flex;
+    backdrop-filter: blur(5px);
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(236, 235, 235, 0.6);
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    right: 0px;}
+
+.navdivider{
+    background-color: #453614;
+    height: 15px;
+    width: 0.5px;
+    border-radius: 20px;}
+
+.navlink{
+    font-size: 11px;
+    color: #453614;
+    font-weight: 600;}
+
+.floatingmacdiv{
+    position: absolute;
+    right: 5vw;
+    bottom: 15vh;
+    z-index: 50;
+}
+            
+.floatingmac{
+    width: 600px;
+    transform: translateY(70px);
+    opacity: 0;}
+
+.blankdiv{
+    height: 30vh;
+}    
+    
+.imaginecreatediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.imaginecreate{
+    width: 100%;
+    transform: translateY(40px);
+    opacity: 0;}
+    
+.imaginecreatemobile{
+    opacity: 0;
+    transform: translateY(40px);
+}    
+
+.scrolldiv{
+    justify-self: center;}    
+
+.scroll{
+    height: 150px;
+    opacity: 0;
+    transform: translateY(-40px);}
+
+/*
+.imaginecreatemobilediv{
+    position: absolute;
+    display: flex;
+    left: 5vw;
+    top: 3vh;
+
+}    
+
+.imaginecreatemobile{
+    height: 90vh;
+}    
+
+
+
+*/
+
+.introsection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;}
+
+.introcontent{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}    
+    
+.texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+    
+.welcom{
+    color: #D5D5D5;
+    width: 5%;}
+    
+.largetxt{
+    color: #1E1E1E;
+    font-family: "adogare", sans-serif;
+    font-size: 58px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 80px;}
+
+.smalltxt{
+color: #4D545F;
+font-family: "Space Grotesk";
+font-size: 17px;
+font-weight: 200;
+line-height: 20px;
+text-align: center;}
+
+.graphics{
+    width: 100%;
+    transform: translateY(100px);
+    opacity: 0;
+
+    /*Preload Animation*/
+    /*opacity: 0;
+    transform: translateY(200px);
+    animation: fadeUp both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
+
+    @keyframes fadeUp {
+    from {
+    opacity: 0;
+    transform: translateY(200px) scale(1);}
+    to {
+    opacity: 1;
+    transform: translateY(0);}*/}
+
+.graphix2{
+    width: 100%;
+    transform: translateY(100px);
+    opacity: 0;
+}  
+
+.servicessection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;}
+    
+.servicescontent{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;}
+
+.brandidentity{
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+    margin-bottom: 70px;}
+
+.servicesimg1, .servicesimg2, .servicesimg3{
+    width: 60%;
+    border-radius: 5px;}
+    
+.numberntext{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15%;
+}    
+
+.servicesnumber{
+    width: 30%;
+}
+
+.servicestxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    transform: translateY(100px);
+    opacity: 0;
+    width: 100%;
+}
+
+.servicesinfo{
+color: #6e6e6e;
+font-size: 13px;
+line-height: 15px;
+text-align: left;
+}
+
+    
+.textsection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    width: 100vw;
+    height: 400px;}
+
+.text2{
+    width: 90vw;
+    color: #1E1E1E;
+    font-family: "adogare", sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 80px;}
+    
+.projectsection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 1055px;}
+
+.projectmaster{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-self: center;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    gap: 30px;
+    width: 90vw;}
+    
+.ourwork{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "adogare", sans-serif;
+    margin: 0;}    
+
+.projectcontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    flex-wrap: wrap;
+}  
+
+.projectcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47.5%;
+    height: 100%;
+    gap: 20px;
+    margin-bottom: 50px;
+    transform: translateY(70px);
+    opacity: 0;}
+
+.projectimg{
+    background-color: blue;
+    width: 100%;
+}
+
+.projblock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+
+.projtitle, .servicetitle{
+    font-size: 17px;
+    line-height: 20px;
+  font-weight: 600;
+    color: #1e1e1e;}
+    
+.projdescription{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    color: #6e6e6e;
+
+}
+
+.projectbutton{
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: none;
+    color: #858585;
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.awardsection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;}
+
+.awardscontent{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.awardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;}
+
+.tsh{
+    width: 160px;
+    flex-shrink: 1 ;}    
+
+.footer{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 350px;
+    margin-top: 80px;
+    background-color: #1e1e1e;}
+
+.footercontent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    width: 90vw;
+    height: 250px;
+    justify-self: center;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 65%;
+    height: 17%;}
+
+.contacta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+    
+.top{
+    font-size: 16px;
+    font-weight: 600;
+    color: #858585;
+    }
+    
+.bottom{
+    font-size: 16px;
+    color: #ECEBEB;}   
+    
+.contactb{
+    font-size: 16px;
+    color: #ECEBEB;}    
+
+.designlabnlogo{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    height: 70%;}
+
+.designlabfooter{
+    width: 65%;
+    height: 100%;
+}    
+
+.logosection{
+    width: 18%;
+    height: 100%;
+
+}
+
+/*Preload Animation*/
+    /* opacity: 0;
+    transform: translateY(200px) scale(0.5);
+    animation: Fromleft both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
+
+    @keyframes Fromleft {
+    from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.5);}
+    to {
+    opacity: 1;
+    transform: translateY(0) scale(1);} */
+
+/*@media (width > 1000px) and (width < 1390px){
+    .floatingmacdiv{
+    bottom: 130px;}
+    .floatingmac{
+    width: 560px;}    
+    .textsection{
+    height: 709px;
+    1065 and below}
+   }
+
+@media (width > 1025px) and (width < 1200px) {
+    .servicessection{height: 860px;}
+    .textsection{height: 660px;}
+    .textbox{width: 610px;}
+    .primarytext{
+        font-size: 35px;
+        line-height: 40px;}
+    .tsh {width: 150px;}}*/
+
+    @media (width > 1025px){
+        .largetxt{
+            line-height: 60px;
+        }
+        .brandidentity{
+            gap: 7%;
+        }
+    }
+    @media (width > 770px) and (width < 2560px){
+        .smalltxt {
+            font-size: 23px;
+            line-height: 25px;
+            text-align: left;
+            width: 45%;}
+        .largetxt {
+            width: 77%;} }
+
+               
+    
+    @media (width > 1024px) and (width < 1200px){
+        .largetxt {
+            font-size: 50px;
+            line-height: 60px;}
+        .servicesinfo{
+            font-size: 13px;
+            line-height: 16px;}
+        .projectsection{
+            height: 950px;}}
+
+  
+            
+    @media(width > 770px) and (width < 1025px){
+        .floatingmac {width: 460px;}
+        .smalltxt {
+            font-size: 20px;
+            width: 55%;}
+        .largetxt {
+            font-size: 47px;
+            line-height: 50px;}
+            .hero{
+            margin-bottom: 15px;}    
+        .servicesinfo{
+            font-size: 13px;
+            line-height: 16px;}
+        .numberntext {
+            display: flex;
+            justify-content: space-between;
+            align-items: normal;
+            flex-direction: column;}
+        .servicesnumber {
+            width: 50%;}
+        
+        .text2{
+            font-size: 50px;
+            line-height: 62px;}
+        .textsection2{
+            height: auto;}
+        .projectsection{
+            height: 975px;}
+        .servicetitle{
+            font-size: 18px;
+            line-height: 20px;}
+        .brandidentity{
+            gap: 14%;
+        }}
+        
+    @media(width < 771px){
+        .hero{
+            margin-bottom: 50px;}
+        .imaginecreatediv{
+            display: none;} 
+        .herocontent{
+            justify-content: space-between;
+            flex-direction: row-reverse;}
+        .scrolldiv{
+            align-self: end;}
+        .blankdiv{
+            display: none;}
+        .imaginecreatemobile{
+            height: 75vh;}
+        .imaginecreatemobilediv{
+            align-self: flex-end;}
+        .introsection{
+            margin-bottom: 60px;}
+        .welcom{
+            width: 7%;}  }     
+
+    @media(width < 771px) and (width > 549px){
+        .floatingmacdiv{
+            right: 5vw;
+            bottom: 17vh;}
+        .floatingmac{
+            width: 415px;}}
+
+    @media(width < 550px) and (width > 424px){
+        .floatingmacdiv{
+            right: 5vw;
+            bottom: 25vh;}
+        .floatingmac{
+            width: 365px;}
+        .imaginecreatemobile {
+            height: 75vh;}}    
+
+
+    @media(width > 770px){
+        .imaginecreatemobilediv{
+            display: none;}}
+
+    @media(width < 450px){
+        .floatingmacdiv {
+            bottom: 25vh;}
+        .floatingmac{
+            width: 365px;}
+        .graphics{
+            display: none;
+            width: 100%;}}
+
+    @media(width > 450px){
+        .graphix2{
+            display: none;}
+    }
+    @media(width < 771px) and (width > 430px){
+        .hero {margin-bottom: 0px;}
+        .largetxt {
+            line-height: 50px;
+            font-size: 45px;}
+        .numberntext {
+            flex-direction: column;
+            align-items: flex-start;}
+        .servicetitle {
+        font-size: 13px;
+        line-height: 15px;}
+        .brandidentity{
+            gap: 12%;
+        }
+        .servicesinfo {  
+            font-size: 11px;
+        line-height: 13px;}
+        .textsection2 {
+            height: 134px;
+            margin-bottom: 40px;}
+        .text2 {
+            font-size: 38px;
+            line-height: 45px;
+        text-align: center;}
+        .projectsection {height: 870px;}
+        .projtitle{
+            font-size: 13px;
+        }
+        .projdescription {
+    font-size: 11px;}
+        .contacts {
+            width: 100%;
+            font-size: 13px;}  }
+
+    @media(width < 431px) and (width > 319px){
+        .welcom {width: 20%;}
+    .largetxt{
+        font-size: 54px;
+        line-height: 48px;
+    }
+.brandidentity{
+    flex-direction: column;}
+.servicesimg1, .servicesimg2, .servicesimg3{
+    width: 100%;
+}
+.numberntext{
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20%;}
+.brandidentity{
+        gap: 30px;}
+.servicesnumber{
+    width: 25%;}
+.servicetitle{
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+}   
+.servicesinfo {  
+        font-size: 13px;
+    line-height: 14px;
+    text-align: right;
+}   
+.servicestxt {
+    align-items: flex-end;
+
+}
+.textsection2{
+    height: auto;
+    margin-bottom: 70px;
+}
+.text2{
+     font-size: 54px;
+        line-height: 48px;
+}
+.projectcontent{
+    width: 100%;
+}
+.projectsection {
+    height: 1520px;
+    margin-bottom: 30px;
+}
+.projectinfo{
+    align-items: flex-start;
+}
+.projtitle{
+    font-size: 15px;
+}
+.tsh {
+        width: 105px;
+}
+.awardsection{
+    height: auto;
+}
+.footercontent{
+    gap: 50px;
+    height: auto;
+}
+.contacts{
+    flex-direction: column;
+        align-items: flex-start;
+    gap: 30px
+}
+.footer{
+        height: 570px;
+}
+.designlabfooter{
+    display: none;}
+.logosection {
+        width: 50%;
+}}
+  
