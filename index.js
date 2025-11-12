@@ -23,108 +23,34 @@ smoother.effects(".largetxt, .brandidentity, .textsection2",{
       ease: "power3.inOut"
     });
 
-    gsap.to(".texts", {
-      y: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".texts",
-        start: "top 80%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
+    const fadeInElements = [
+  ".graphics",
+  ".graphix2",
+  ".imaginecreate",
+  ".imaginecreatemobile",
+  ".floatingmac",
+  ".projectcontent",
+  ".servicestxt",
+  ".texts"
+];
 
-
-    gsap.to(".servicestxt", {
-      y: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".servicestxt",
-        start: "top 80%"},
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
-    gsap.to(".graphics, .graphix2", {
-      y: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".graphics",
-        start: "top 80%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
-    gsap.to(".imaginecreate", {
-      y: 0,
-      duration: 2.5,
-      scrollTrigger: {
-        trigger: ".imaginecreate",
-        start: "top 90%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
-    gsap.to(".imaginecreatemobile", {
-      y: 0,
-      duration: 2.5,
-      scrollTrigger: {
-        trigger: ".imaginecreatemobile",
-        start: "top 90%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
-    gsap.to(".scroll", {
-      y: 0,
-      duration: 3,
-      repeat: -1,
-      scrollTrigger: {
-        trigger: ".scroll",
-        start: "top 90%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
-    gsap.to(".floatingmac", {
-      y: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".floatingmac",
-        start: "top 90%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
-    gsap.to(".projectcontent", {
-      y: 0,
-      duration: 2,
-      opacity: 1,
-      ease: "power3.inOut",
-      
-      scrollTrigger: {
-        trigger: ".ourwork",
-        start: "top 80%"},});
-
-    gsap.to(".servicestxt", {
-      y: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".servicestxt",
-        start: "top 80%"
-      },
-      opacity: 1,
-      ease: "power3.inOut"
-    });
-
+fadeInElements.forEach(selector => {
+  gsap.from(selector, {
+    y: 50,
+    opacity: 0,
+    duration: 1.6,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: selector,
+      start: "top 85%",
+      toggleActions: "play none none reverse"
+    }
+  });
+});
     // refresh after setup
 
     window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
+
 
