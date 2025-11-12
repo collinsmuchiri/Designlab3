@@ -124,4 +124,7 @@ smoother.effects(".largetxt, .brandidentity, .textsection2",{
 
     // refresh after setup
 
-    ScrollTrigger.refresh();
+    window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
+});
+
